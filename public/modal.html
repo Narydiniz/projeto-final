@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Modal de Login -->
+    <div id="login-modal" class="modal">
+
+        <div class="modal-content login-modal">
+
+            <span class="close" onclick="fecharModal()">&times;</span>
+
+            <h2>Login</h2>
+
+            <!-- Campos de email e senha -->
+            <div class="login-campos">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <textarea cols="10" rows="4" maxlength="2000" name="Message" id="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+            </div>
+
+            <!-- Botão de login -->
+            <div class="login-botoes">
+                <button id="login-submit" onclick="fazerLogin()">Entrar</button>
+            </div>
+
+            <!-- Mensagem de erro -->
+            <p id="login-error" style="color: red;"></p>
+
+        </div>
+
+    </div>
+
+    <!-- Modal de Cadastro Cliente-->
+    <div id="cadastro-cliente" class="modal">
+
+        <div class="modal-content cadastro-cliente">
+
+            <span class="close" onclick="fecharModal()">&times;</span>
+
+            <h2>Cadastro Cliente</h2>
+
+            <!-- Campos de email e senha -->
+            <div class="cadastro-campos">
+                <input type="name" id="nome" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="phone" id="contato" placeholder="Número para contato" required>
+                <input type="address" id="endereco" placeholder="Endereço" required>
+                <input type="city" id="cidade" placeholder="Cidade" required>
+                <input type="state" id="estado" placeholder="Estado" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+                
+            </div>
+
+            <!-- Botão de cadastro -->
+            <div class="cadastro-botoes">
+                <button id="cadastro-submit" onclick="fazerCadastro()">Cadastrar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
